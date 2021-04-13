@@ -7,6 +7,30 @@
   <title>Weather-App</title>
 </head>
 <body>
+  
+    <div class="flex justify-between w-9/12 mx-auto">
+      <div class="flex flex-col">
+        <p class="text-lg text-gray-200 mb-0">Visibility</p>
+        <p class="text-lg text-white mt-0" data-vis>0%</p>
+      </div>
+      <div class="flex flex-col">
+        <p class="text-lg text-gray-200 mb-0">Wind</p>
+        <p class="text-lg text-white mt-0" data-wind>4 KMPH</p>
+      </div>
+      <div class="flex flex-col">
+        <p class="text-lg text-gray-200 mb-0">Humidity</p>
+        <p class="text-lg text-white mt-0" data-hum>71%</p>
+      </div>
+    </div>
+    <div>
+      <p class="text-4xl text-white" data-desc>description</p>
+    </div>
+    <div>
+      <p class="text-[7rem] text-white" data-temp>temp</p>
+    </div>
+    <div class="font-medium">
+      <p class="text-3xl text-white" data-city></p>
+    </div>
   <div class="input relative">
       <button type="submit" data-submit>Submit</button>
       <input type="text" placeholder="Search city..." data-input>
