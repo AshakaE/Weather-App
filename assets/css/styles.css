@@ -6,13 +6,11 @@ html *:after { box-sizing: inherit; }
 body {
   max-width: 42em;
   max-height: 100vh;
-  /* padding: 2em; */
   margin: 0 auto;
-/*   color: red; */
-  font-family: 'Roboto', sans-serif;
   text-align: center;
-  /* background-color: currentColor; */
 }
+
+p { margin: 1.375rem 0; }
 
 .dropOne {
   fill: #0cf;

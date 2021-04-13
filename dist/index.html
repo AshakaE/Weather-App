@@ -12,6 +12,9 @@
 <div class="container mx-auto min-w-full my-auto min-h-full p-3 rounded-lg drop-shadow-md">
 
   <div class="bg-gray-600 h-auto w-full p-8 rounded-xl shadow-xl opacity-90 mt-20 flex items-center flex-col">
+    <div class="bg-gray-800 w-full h-44 flex justify-center items-center rounded-lg inp">
+
+    </div>
     <div class="flex justify-between w-9/12 mx-auto">
       <div class="flex flex-col">
         <p class="text-lg text-gray-200 mb-0">Visibility</p>
@@ -19,14 +22,14 @@
       </div>
       <div class="flex flex-col">
         <p class="text-lg text-gray-200 mb-0">Wind</p>
-        <p class="text-lg text-white mt-0" data-wind>4 KMPH</p>
+        <p class="text-lg text-white mt-0" data-wind>0m/s</p>
       </div>
       <div class="flex flex-col">
         <p class="text-lg text-gray-200 mb-0">Humidity</p>
-        <p class="text-lg text-white mt-0" data-hum>71%</p>
+        <p class="text-lg text-white mt-0" data-hum>0%</p>
       </div>
-    </div>
-    <div>
+    </div> 
+     <div>
       <p class="text-4xl text-white" data-desc>description</p>
     </div>
     <div>
@@ -35,11 +38,11 @@
     <div class="font-medium">
       <p class="text-3xl text-white" data-city></p>
     </div>
-  <div class="input relative">
-      <button type="submit" data-submit>Submit</button>
-      <input type="text" placeholder="Search city..." data-input>
+    <div class="input relative">
+      <button type="submit" class="submit bg-green-500 rounded-md focus:outline-none h-10 w-20 cursor-pointer absolute bottom-3 z-20 right-4 uppercase text-white font-medium shadow-lg focus:bg-green-600 duration-150" data-submit>Submit</button>
+      <input type="text" placeholder="Search city..." class="pt-5 pb-5 text-base uppercase pr-10 pl-5 w-96 tracking-widest duration-300 focus:outline-none focus:ring focus:border-blue-500 focus:border-2 rounded-md inp opacity-70 bg-blend-soft-light" data-input>
     </div>
-      </div>
+  </div>
 </div>
   <script src='./main.js'></script>
 </body>
