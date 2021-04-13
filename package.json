@@ -3,8 +3,8 @@
     "build": "webpack",
     "watch": "webpack --watch",
     "start": "webpack serve --open",
-    "cssbuild": "cross-env TAILWIND_MODE=build postcss ./public/tailwind.css  -o ./public/build.css --verbose",
-    "dev": "cross-env TAILWIND_MODE=watch postcss build ./public/tailwind.css -o ./public/build.css -w --verbose"
+    "cssbuild": "cross-env TAILWIND_MODE=build postcss ./assets/css/tailwind.css  -o ./assets/css/build.css --verbose",
+    "dev": "cross-env TAILWIND_MODE=watch postcss build ./assets/css/tailwind.css -o ./assets/css/build.css -w --verbose"
   },
   "devDependencies": {
     "@babel/core": "^7.13.15",
