@@ -24,8 +24,6 @@ button.addEventListener('click', () => {
       const humValue = data.main.humidity;
       const windValue = (data.wind.speed).toFixed(1);
       const countryValue = data.sys.country;
-      console.log(data);
-      console.log(descValue);
 
       renderDisplay(descValue);
 
@@ -35,5 +33,7 @@ button.addEventListener('click', () => {
       wind.innerHTML = `${windValue}m/s`;
       humidity.innerHTML = `${humValue}%`;
       visibility.innerHTML = `${visValue}km`;
-    });
+    })
+    // eslint-disable-next-line no-alert
+    .catch(() => alert('Not found!'));
 });
