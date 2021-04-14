@@ -242,7 +242,7 @@ const renderSunnyCloud = () => {
 };
 
 const renderDisplay = (val) => {
-  const regex = /(?<cond>broken|scattered) clouds/;
+  const regex = /(?<cond>broken|overcast) clouds/;
   if (val.includes('snow')) {
     renderSnow();
   } else if (val.includes('clear')) {
