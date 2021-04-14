@@ -23,12 +23,13 @@ button.addEventListener('click', () => {
       const visValue = (data.visibility) / 1000;
       const humValue = data.main.humidity;
       const windValue = (data.wind.speed).toFixed(1);
+      const countryValue = data.sys.country;
       console.log(data);
       console.log(descValue);
 
       renderDisplay(descValue);
 
-      city.innerHTML = cityValue;
+      city.innerHTML = `${cityValue}, ${countryValue}`;
       desc.innerHTML = descValue;
       temp.innerHTML = `${+tempValue}&deg;C`;
       wind.innerHTML = `${windValue}m/s`;
