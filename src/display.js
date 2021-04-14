@@ -241,6 +241,25 @@ const renderSunnyCloud = () => {
   display.insertAdjacentHTML('afterbegin', sunnyCloud);
 };
 
-export {
-  renderSun, renderStorm, renderRain, renderSnow, renderCloud, renderCloudy, renderSunnyRain, renderSunnyCloud,
+const renderDisplay = (val) => {
+  const regex = /(?<cond>broken|scattered) clouds/;
+  if (val.includes('snow')) {
+    renderSnow();
+  } else if (val.includes('clear')) {
+    renderSun();
+  } else if (val.includes('scattered')) {
+    renderCloud();
+  } else if (val.includes('moderate')) {
+    renderRain();
+  } else if (val.match(regex)) {
+    renderCloudy();
+  } else if (val.includes('heavy')) {
+    renderStorm();
+  } else if (val.includes('light')) {
+    renderSunnyRain();
+  } else if (val.includes('few')) {
+    renderSunnyCloud();
+  }
 };
+
+export default renderDisplay;

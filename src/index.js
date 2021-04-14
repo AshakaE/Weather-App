@@ -1,4 +1,4 @@
-import * as display from './display';
+import renderDisplay from './display';
 
 /* eslint-disable no-console */
 const envVars = process.env.OPENWEATHER_KEY;
@@ -26,23 +26,7 @@ button.addEventListener('click', () => {
       console.log(data);
       console.log(descValue);
 
-      if (descValue.includes('snow')) {
-        display.renderSnow();
-      } else if (descValue.includes('clear')) {
-        display.renderSun();
-      } else if (descValue.includes('scattered')) {
-        display.renderCloud();
-      } else if (descValue.includes('moderate')) {
-        display.renderRain();
-      } else if (descValue.includes('overcast')) {
-        display.renderCloudy();
-      } else if (descValue.includes('heavy')) {
-        display.renderStorm();
-      } else if (descValue.includes('light')) {
-        display.renderSunnyRain();
-      } else if (descValue.includes('few')) {
-        display.renderSunnyCloud();
-      }
+      renderDisplay(descValue);
 
       city.innerHTML = cityValue;
       desc.innerHTML = descValue;
