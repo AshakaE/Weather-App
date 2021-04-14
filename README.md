@@ -46,8 +46,8 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-Microverse
-The Odin Project
+- Microverse
+- The Odin Project
 
 ## 📝 License
 
