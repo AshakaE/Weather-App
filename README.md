@@ -45,7 +45,7 @@ Feel free to check the [issues page](https://github.com/AshakaE/Weather-App/issu
 Give a ⭐️ if you like this project!
 
 ## Acknowledgments
-
+- Display icons inspired by [PatharaNor](https://github.com/patharanordev/weather-icon-animated)
 - Microverse
 - The Odin Project
 
