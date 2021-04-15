@@ -13,6 +13,7 @@ const button = document.querySelector('[data-submit]');
 const unitCheck = document.querySelector('[data-check]');
 const unit = document.querySelector('[data-unit]');
 const unitSi = document.querySelector('[data-si]');
+const converter = document.querySelector('[data-conv]');
 
 button.addEventListener('click', () => {
   fetch(
@@ -30,7 +31,7 @@ button.addEventListener('click', () => {
       const countryValue = data.sys.country;
 
       disp.renderDisplay(descValue);
-
+      converter.classList.remove('hide');
       city.innerHTML = `${cityValue}, ${countryValue}`;
       desc.innerHTML = descValue;
       temp.innerHTML = `${+tempValue}`;
