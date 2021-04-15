@@ -37,8 +37,9 @@
      <div>
       <p class="text-4xl text-white" data-desc>description</p>
     </div>
-    <div>
-      <p class="text-[7rem] text-white" data-temp>temp</p>
+    <div class="flex">
+      <p class="text-[7rem] text-white" data-temp>0</p>
+      <p class="text-[7rem] text-white" data-unit>&deg;C</p>
     </div>
     <div class="font-medium">
       <p class="text-3xl text-white" data-city></p>
@@ -47,8 +48,20 @@
       <button type="submit" class="submit bg-green-500 rounded-md focus:outline-none h-10 w-20 cursor-pointer absolute bottom-3 z-20 right-4 uppercase text-white font-medium shadow-lg focus:bg-green-600 duration-150" data-submit>Submit</button>
       <input type="text" placeholder="Search city..." class="pt-5 pb-5 text-base uppercase pr-10 pl-5 w-96 tracking-widest duration-300 focus:outline-none focus:ring focus:border-blue-500 focus:border-2 rounded-md inp opacity-70 bg-blend-soft-light" data-input>
     </div>
+    <div class="flex items-center h-5 mt-4">
+      <!-- <input type="checkbox" data-check> -->
+      <!-- <p class="ml-3 text-white" data-si>Imperial</p> -->
+      <ul>
+        <li>
+          <input id="s2" type="checkbox" class="switch" data-check>
+          <label for="s2" class="text-white" data-si>Imperial</label>
+        </li>
+      </ul>
+    </div>
   </div>
 </div>
   <script src='./main.js'></script>
 </body>
 </html>
+
+
