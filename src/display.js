@@ -241,6 +241,14 @@ const renderSunnyCloud = () => {
   display.insertAdjacentHTML('afterbegin', sunnyCloud);
 };
 
+const renderError = () => {
+  const error = `
+    <h1 class="text-4xl text-white ">Not found !</h1>
+  `;
+  display.innerHTML = '';
+  display.insertAdjacentHTML('afterbegin', error);
+};
+
 const renderDisplay = (val) => {
   const regex = /(?<cond>broken|overcast) clouds/;
   if (val.includes('snow')) {
@@ -262,4 +270,4 @@ const renderDisplay = (val) => {
   }
 };
 
-export default renderDisplay;
+export { renderError, renderDisplay };
