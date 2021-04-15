@@ -31,6 +31,7 @@ button.addEventListener('click', () => {
       const countryValue = data.sys.country;
 
       disp.renderDisplay(descValue);
+      unitCheck.checked = false;
       converter.classList.remove('hide');
       city.innerHTML = `${cityValue}, ${countryValue}`;
       desc.innerHTML = descValue;
