@@ -1,4 +1,4 @@
-import renderDisplay from './display';
+import * as disp from './display';
 
 const envVars = process.env.OPENWEATHER_KEY;
 
@@ -29,7 +29,7 @@ button.addEventListener('click', () => {
       const windValue = data.wind.speed.toFixed(1);
       const countryValue = data.sys.country;
 
-      renderDisplay(descValue);
+      disp.renderDisplay(descValue);
 
       city.innerHTML = `${cityValue}, ${countryValue}`;
       desc.innerHTML = descValue;
@@ -39,20 +39,19 @@ button.addEventListener('click', () => {
       visibility.innerHTML = `${visValue}km`;
       unit.innerHTML = '&deg;C';
     })
-    // eslint-disable-next-line no-alert
-    .catch(() => alert('Not found!'));
+    .catch(() => disp.renderError());
 });
 
 const toggleUnit = () => {
   if (unitCheck.checked === true) {
     unitSi.innerHTML = '';
     unitSi.innerHTML = 'Metric';
-    let fValue = parseInt(temp.innerHTML);
+    let fValue = parseFloat(temp.innerHTML);
     fValue = ((fValue * 9) / 5 + 32).toPrecision(2);
     unit.innerHTML = '';
     temp.innerHTML = `${fValue}&#8457;`;
   } else {
-    let cValue = parseInt(temp.innerHTML);
+    let cValue = parseFloat(temp.innerHTML);
     cValue = (((cValue - 32) * 5) / 9).toPrecision(2);
     temp.innerHTML = cValue;
     unit.innerHTML = '&deg;C';
