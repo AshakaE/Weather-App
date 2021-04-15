@@ -1,4 +1,5 @@
 const display = document.querySelector('[data-display]');
+const containerDiv = document.querySelector('[data-container]');
 
 const renderSun = () => {
   const sun = `
@@ -6,6 +7,8 @@ const renderSun = () => {
         <img src="../assets/svg/day.svg" alt="" style="" class="transform scale-[5]">
       </div> 
   `;
+  containerDiv.classList = '';
+  containerDiv.classList = 'bg-blue-300 bg-opacity-10 h-auto w-full p-8 rounded-xl shadow-xl opacity-90 mt-20 flex items-center flex-col';
   display.innerHTML = '';
   display.insertAdjacentHTML('afterbegin', sun);
 };
@@ -36,6 +39,9 @@ const renderStorm = () => {
           
       </div> 
   `;
+  containerDiv.classList = '';
+  containerDiv.classList = 'bg-gradient-to-b from-gray-400 via-gray-900 to-transparent  h-auto w-full p-8 rounded-xl shadow-xl opacity-90 mt-20 flex items-center flex-col';
+
   display.innerHTML = '';
   display.insertAdjacentHTML('afterbegin', storm);
 };
@@ -68,6 +74,8 @@ const renderRain = () => {
           </svg>
       </div>  
   `;
+  containerDiv.classList = '';
+  containerDiv.classList = 'bg-gradient-to-b from-gray-900 to-transparent h-auto w-full p-8 rounded-xl shadow-xl opacity-90 mt-20 flex items-center flex-col';
   display.innerHTML = '';
   display.insertAdjacentHTML('afterbegin', rain);
 };
@@ -109,6 +117,9 @@ const renderSnow = () => {
           </div> 
       </div>
   `;
+  containerDiv.classList = '';
+  containerDiv.classList = 'bg-white bg-opacity-30 h-auto w-full p-8 rounded-xl shadow-xl opacity-90 mt-20 flex items-center flex-col';
+
   display.innerHTML = '';
   display.insertAdjacentHTML('afterbegin', snowflake);
 };
@@ -134,6 +145,8 @@ const renderCloud = () => {
             </div>
       </div> 
   `;
+  containerDiv.classList = '';
+  containerDiv.classList = 'bg-gradient-to-b from-transparent to-gray-300  h-auto w-full p-8 rounded-xl shadow-xl opacity-90 mt-20 flex items-center flex-col';
   display.innerHTML = '';
   display.insertAdjacentHTML('afterbegin', cloud);
 };
@@ -180,6 +193,8 @@ const renderCloudy = () => {
             </div>
       </div> 
   `;
+  containerDiv.classList = '';
+  containerDiv.classList = 'bg-gradient-to-b from-gray-200 via-gray-600 to-gray-900 h-auto w-full p-8 rounded-xl shadow-xl opacity-90 mt-20 flex items-center flex-col';
   display.innerHTML = '';
   display.insertAdjacentHTML('afterbegin', cloudy);
 };
@@ -217,6 +232,8 @@ const renderSunnyRain = () => {
         </div>       
       </div> 
   `;
+  containerDiv.classList = '';
+  containerDiv.classList = 'bg-gradient-to-b from-white via-blue-300 to-transparent h-auto w-full p-8 rounded-xl shadow-xl opacity-90 mt-20 flex items-center flex-col';
   display.innerHTML = '';
   display.insertAdjacentHTML('afterbegin', sunnyRain);
 };
@@ -237,6 +254,8 @@ const renderSunnyCloud = () => {
         </div>       
       </div> 
   `;
+  containerDiv.classList = '';
+  containerDiv.classList = 'bg-gradient-to-b from-yellow-300 via-blue-300 to-transparent h-auto w-full p-8 rounded-xl shadow-xl opacity-90 mt-20 flex items-center flex-col';
   display.innerHTML = '';
   display.insertAdjacentHTML('afterbegin', sunnyCloud);
 };
