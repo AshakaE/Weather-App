@@ -1,4 +1,5 @@
 import * as disp from './display';
+import unitConv from './temp';
 
 const envVars = process.env.OPENWEATHER_KEY;
 
@@ -12,7 +13,6 @@ const input = document.querySelector('[data-input]');
 const button = document.querySelector('[data-submit]');
 const unitCheck = document.querySelector('[data-check]');
 const unit = document.querySelector('[data-unit]');
-const unitSi = document.querySelector('[data-si]');
 const converter = document.querySelector('[data-conv]');
 
 button.addEventListener('click', () => {
@@ -44,22 +44,4 @@ button.addEventListener('click', () => {
     .catch(() => disp.renderError());
 });
 
-const toggleUnit = () => {
-  if (unitCheck.checked === true) {
-    unitSi.innerHTML = '';
-    unitSi.innerHTML = 'Metric';
-    let fValue = parseFloat(temp.innerHTML);
-    fValue = ((fValue * 9) / 5 + 32).toPrecision(2);
-    unit.innerHTML = '';
-    temp.innerHTML = `${fValue}&#8457;`;
-  } else {
-    let cValue = parseFloat(temp.innerHTML);
-    cValue = (((cValue - 32) * 5) / 9).toPrecision(2);
-    temp.innerHTML = cValue;
-    unit.innerHTML = '&deg;C';
-    unitSi.innerHTML = 'Imperial';
-  }
-};
-unitCheck.addEventListener('change', () => {
-  toggleUnit();
-});
+unitConv();
