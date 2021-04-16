@@ -4,7 +4,7 @@ const containerDiv = document.querySelector('[data-container]');
 const renderSun = () => {
   const sun = `
       <div data-sun>
-        <img src="../assets/svg/day.svg" alt="" style="" class="transform scale-[5]">
+        <img src="assets/svg/day.svg" alt="" style="" class="transform scale-[5]">
       </div> 
   `;
   containerDiv.classList = '';
@@ -203,7 +203,7 @@ const renderSunnyRain = () => {
   const sunnyRain = `
     <div class="transform translate-y-7 w-28" data-sun-rain>
         <div>
-          <img src="../assets/svg/day.svg" alt="" style="" class="transform scale-[4] translate-x-14">
+          <img src="assets/svg/day.svg" alt="" style="" class="transform scale-[4] translate-x-14">
         </div>
         <div class="transform -translate-y-12 -translate-x-1">
           <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 113.85 95.71">
@@ -242,7 +242,7 @@ const renderSunnyCloud = () => {
   const sunnyCloud = `
     <div class="transform -translate-y-3 w-28" data-sun-cloud>
         <div>
-          <img src="../assets/svg/day.svg" alt="" style="" class="transform scale-[4] translate-x-14">
+          <img src="assets/svg/day.svg" alt="" style="" class="transform scale-[4] translate-x-14">
         </div>
         <div class="frontCloud">
           <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 58.09 34.36"
