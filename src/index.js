@@ -1,8 +1,6 @@
 import * as disp from './display';
 import unitConv from './temp';
 
-const envVars = process.env.OPENWEATHER_KEY;
-
 const visibility = document.querySelector('[data-vis]');
 const wind = document.querySelector('[data-wind]');
 const humidity = document.querySelector('[data-hum]');
@@ -17,7 +15,7 @@ const converter = document.querySelector('[data-conv]');
 
 button.addEventListener('click', () => {
   fetch(
-    `https://api.openweathermap.org/data/2.5/weather?q=${input.value}&units=metric&appid=${envVars}`,
+    `https://api.openweathermap.org/data/2.5/weather?q=${input.value}&units=metric&appid=e5febeda67414cd4d9b33be43106b9dc`,
   )
     .then((response) => response.json())
     .then((data) => {
