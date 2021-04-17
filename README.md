@@ -2,7 +2,7 @@
 
 > This is a basic Weather Application that consumes [OpenWeather API](https://openweathermap.org/) to populate the targeted fields in the DOM.
 
-![screenshot](./dist/assets/img/srcshott.jpeg)
+![screenshot](./dist/assets/img/srcshott.png)
 
 ## Built With
 
